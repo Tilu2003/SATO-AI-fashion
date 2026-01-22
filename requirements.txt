@@ -1,0 +1,11 @@
+flask
+google-generativeai
+python-dotenv
+langchain
+langchain-community
+langchain-ollama
+pillow
+reportlab
+opencv-python
+numpy
+scipy

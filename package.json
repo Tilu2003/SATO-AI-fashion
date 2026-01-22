@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "@freesewing/bella": "^3.1.0",
+    "@freesewing/breanna": "^2.22.2",
+    "@freesewing/brian": "^3.1.0",
+    "@freesewing/charlie": "^3.1.0",
+    "@freesewing/core": "^2.22.2",
+    "@freesewing/plugin-bundle": "^2.22.2",
+    "@freesewing/plugin-theme": "^2.22.2",
+    "@freesewing/sandy": "^3.1.0",
+    "@freesewing/simon": "^3.1.0",
+    "@freesewing/wahid": "^3.1.0",
+    "freesewing": "^0.30.6"
+  },
+  "name": "sato-project",
+  "version": "1.0.0",
+  "description": "SATO AI Fashion Pattern Generator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module"
+}

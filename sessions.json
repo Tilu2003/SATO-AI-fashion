@@ -1,0 +1,1809 @@
+{
+    "68a64650-4af8-4a95-98a6-e6ce95cdb090": {
+        "stage": "MEASUREMENTS",
+        "image_path": "uploads\\1cd523a4e20844e5a1e9ec7a2da32eff_Screenshot 2025-10-29 100618.png",
+        "analysis": {
+            "garment_type": "dress",
+            "subcategory": "mini_dress",
+            "style_features": [
+                "deep_v_neck",
+                "shoulder_ties",
+                "empire_waist",
+                "tiered_skirt",
+                "broderie_anglaise_fabric"
+            ],
+            "construction_details": [
+                "gathered_bodice",
+                "tiered_skirt_construction",
+                "fully_lined",
+                "back_invisible_zipper"
+            ],
+            "fabric_recommendations": [
+                {
+                    "name": "cotton_eyelet",
+                    "reason": "lightweight, breathable, and provides the characteristic embroidered texture"
+                },
+                {
+                    "name": "cotton_lawn",
+                    "reason": "for lining, lightweight and smooth for comfort"
+                }
+            ],
+            "key_sewing_techniques": [
+                "finishing_deep_v_neckline",
+                "creating_and_attaching_fabric_ties",
+                "gathering_fabric",
+                "joining_tiered_skirts",
+                "inserting_invisible_zipper",
+                "lining_a_garment"
+            ]
+        },
+        "master_plan": {
+            "garment_type": "dress",
+            "subcategory": "mini_dress",
+            "inferred_pieces": [
+                "bodice_front",
+                "bodice_back"
+            ],
+            "key_sewing_techniques": [],
+            "fit_method": "standard_ease",
+            "dynamic_fit_questions": [
+                {
+                    "key": "ease_preference",
+                    "q": "Fit?",
+                    "options": [
+                        "Close",
+                        "Standard",
+                        "Loose"
+                    ]
+                }
+            ]
+        },
+        "complexity": {
+            "level": "standard",
+            "score": 40
+        },
+        "measurement_form_config": {
+            "form_fields": [
+                {
+                    "name": "High Bust",
+                    "description": "Around chest at armpit level, above bust",
+                    "unit": "cm",
+                    "typical_range": [
+                        75,
+                        110
+                    ],
+                    "why": "For armhole placement",
+                    "measurement_guide": "Wrap tape horizontally under armpits",
+                    "validation_min": 60,
+                    "validation_max": 140,
+                    "key": "highBust",
+                    "required": true
+                },
+                {
+                    "name": "Bust/Chest",
+                    "description": "Around fullest part of bust",
+                    "unit": "cm",
+                    "typical_range": [
+                        80,
+                        120
+                    ],
+                    "why": "For bodice width",
+                    "measurement_guide": "Tape around fullest part, parallel to floor",
+                    "validation_min": 65,
+                    "validation_max": 150,
+                    "key": "chestCircumference",
+                    "required": true
+                },
+                {
+                    "name": "Waist",
+                    "description": "At natural waist",
+                    "unit": "cm",
+                    "typical_range": [
+                        60,
+                        100
+                    ],
+                    "why": "For waist fit",
+                    "measurement_guide": "Tie string, measure where it sits naturally",
+                    "validation_min": 50,
+                    "validation_max": 130,
+                    "key": "waistCircumference",
+                    "required": true
+                },
+                {
+                    "name": "Hips",
+                    "description": "Around fullest part of hips",
+                    "unit": "cm",
+                    "typical_range": [
+                        85,
+                        125
+                    ],
+                    "why": "For lower body fit",
+                    "measurement_guide": "Tape around widest part of hips/buttocks",
+                    "validation_min": 70,
+                    "validation_max": 160,
+                    "key": "hipCircumference",
+                    "required": true
+                },
+                {
+                    "name": "Shoulder Width",
+                    "description": "Shoulder point to shoulder point",
+                    "unit": "cm",
+                    "typical_range": [
+                        35,
+                        48
+                    ],
+                    "why": "For shoulder seams",
+                    "measurement_guide": "Across back between shoulder bones",
+                    "validation_min": 30,
+                    "validation_max": 55,
+                    "key": "shoulderToShoulder",
+                    "required": true
+                },
+                {
+                    "name": "Neck",
+                    "description": "Around base of neck",
+                    "unit": "cm",
+                    "typical_range": [
+                        32,
+                        42
+                    ],
+                    "why": "For collar fit",
+                    "measurement_guide": "Loosely around neck base",
+                    "validation_min": 28,
+                    "validation_max": 50,
+                    "key": "neckCircumference",
+                    "required": true
+                },
+                {
+                    "name": "Back Length",
+                    "description": "Neck base to waist",
+                    "unit": "cm",
+                    "typical_range": [
+                        38,
+                        48
+                    ],
+                    "why": "For bodice length",
+                    "measurement_guide": "From prominent vertebra down to waist",
+                    "validation_min": 30,
+                    "validation_max": 60,
+                    "key": "hpsToWaistBack",
+                    "required": true
+                },
+                {
+                    "name": "Front Length",
+                    "description": "Shoulder/neck over bust to waist",
+                    "unit": "cm",
+                    "typical_range": [
+                        40,
+                        52
+                    ],
+                    "why": "For bust dart placement",
+                    "measurement_guide": "From shoulder, over bust, to waist",
+                    "validation_min": 32,
+                    "validation_max": 65,
+                    "key": "hpsToWaistFront",
+                    "required": true
+                },
+                {
+                    "name": "Arm Length",
+                    "description": "Shoulder to wrist",
+                    "unit": "cm",
+                    "typical_range": [
+                        55,
+                        70
+                    ],
+                    "why": "For sleeve length",
+                    "measurement_guide": "Arm slightly bent, shoulder to wrist bone",
+                    "validation_min": 45,
+                    "validation_max": 80,
+                    "key": "shoulderToWrist",
+                    "required": true
+                },
+                {
+                    "name": "Upper Arm",
+                    "description": "Around fullest part of upper arm",
+                    "unit": "cm",
+                    "typical_range": [
+                        25,
+                        40
+                    ],
+                    "why": "For sleeve width",
+                    "measurement_guide": "Around bicep at fullest, arm relaxed",
+                    "validation_min": 20,
+                    "validation_max": 50,
+                    "key": "bicepsCircumference",
+                    "required": true
+                },
+                {
+                    "name": "Garment Length",
+                    "description": "Shoulder to desired hem",
+                    "unit": "cm",
+                    "typical_range": [
+                        50,
+                        120
+                    ],
+                    "why": "For overall length",
+                    "measurement_guide": "From shoulder to where you want hem",
+                    "validation_min": 30,
+                    "validation_max": 180,
+                    "key": "garmentLength",
+                    "required": true
+                }
+            ],
+            "total_count": 11,
+            "garment_info": {
+                "subcategory": "mini_dress",
+                "detected_features": [
+                    "deep_v_neck",
+                    "shoulder_ties",
+                    "empire_waist",
+                    "tiered_skirt",
+                    "broderie_anglaise_fabric"
+                ]
+            }
+        },
+        "measurements": {},
+        "fit_collector_state": null,
+        "created_at": "2025-12-21 22:42:39.820272"
+    },
+    "902cca30-5ebd-4905-a8d3-22cfe7d57b51": {
+        "stage": "MEASUREMENTS",
+        "image_path": "uploads\\732ad3b24fa94fbf82e1b98d8a024da0_Screenshot 2025-10-29 100618.png",
+        "analysis": {
+            "garment_type": "dress",
+            "subcategory": "mini_dress",
+            "style_features": [
+                "deep_v_neck",
+                "tie_shoulder_straps",
+                "empire_waist",
+                "tiered_skirt",
+                "a_line_skirt",
+                "eyelet_fabric",
+                "fitted_bodice"
+            ],
+            "construction_details": [
+                "empire_waist_seam",
+                "gathered_skirt_tiers",
+                "likely_invisible_zipper_closure",
+                "lined_garment"
+            ],
+            "fabric_recommendations": [
+                {
+                    "name": "cotton_eyelet",
+                    "reason": "achieves characteristic texture, breathable"
+                },
+                {
+                    "name": "embroidered_cotton",
+                    "reason": "similar aesthetic, comfortable, breathable"
+                },
+                {
+                    "name": "cotton_poplin",
+                    "reason": "crisp drape, suitable for structure, holds shape well"
+                }
+            ],
+            "key_sewing_techniques": [
+                "sewing_v_neckline",
+                "creating_tie_shoulder_straps",
+                "gathering_fabric",
+                "attaching_skirt_tiers",
+                "inserting_invisible_zipper",
+                "lining_garment"
+            ]
+        },
+        "master_plan": {
+            "garment_type": "dress",
+            "subcategory": "mini_dress",
+            "inferred_pieces": [
+                "bodice_front",
+                "bodice_back"
+            ],
+            "key_sewing_techniques": [],
+            "fit_method": "standard_ease",
+            "dynamic_fit_questions": [
+                {
+                    "key": "ease_preference",
+                    "q": "Fit?",
+                    "options": [
+                        "Close",
+                        "Standard",
+                        "Loose"
+                    ]
+                }
+            ]
+        },
+        "complexity": {
+            "level": "standard",
+            "score": 40
+        },
+        "measurement_form_config": {
+            "form_fields": [
+                {
+                    "name": "High Bust",
+                    "description": "Around chest at armpit level, above bust",
+                    "unit": "cm",
+                    "typical_range": [
+                        75,
+                        110
+                    ],
+                    "why": "For armhole placement",
+                    "measurement_guide": "Wrap tape horizontally under armpits",
+                    "validation_min": 60,
+                    "validation_max": 140,
+                    "key": "highBust",
+                    "required": true
+                },
+                {
+                    "name": "Bust/Chest",
+                    "description": "Around fullest part of bust",
+                    "unit": "cm",
+                    "typical_range": [
+                        80,
+                        120
+                    ],
+                    "why": "For bodice width",
+                    "measurement_guide": "Tape around fullest part, parallel to floor",
+                    "validation_min": 65,
+                    "validation_max": 150,
+                    "key": "chestCircumference",
+                    "required": true
+                },
+                {
+                    "name": "Waist",
+                    "description": "At natural waist",
+                    "unit": "cm",
+                    "typical_range": [
+                        60,
+                        100
+                    ],
+                    "why": "For waist fit",
+                    "measurement_guide": "Tie string, measure where it sits naturally",
+                    "validation_min": 50,
+                    "validation_max": 130,
+                    "key": "waistCircumference",
+                    "required": true
+                },
+                {
+                    "name": "Hips",
+                    "description": "Around fullest part of hips",
+                    "unit": "cm",
+                    "typical_range": [
+                        85,
+                        125
+                    ],
+                    "why": "For lower body fit",
+                    "measurement_guide": "Tape around widest part of hips/buttocks",
+                    "validation_min": 70,
+                    "validation_max": 160,
+                    "key": "hipCircumference",
+                    "required": true
+                },
+                {
+                    "name": "Shoulder Width",
+                    "description": "Shoulder point to shoulder point",
+                    "unit": "cm",
+                    "typical_range": [
+                        35,
+                        48
+                    ],
+                    "why": "For shoulder seams",
+                    "measurement_guide": "Across back between shoulder bones",
+                    "validation_min": 30,
+                    "validation_max": 55,
+                    "key": "shoulderToShoulder",
+                    "required": true
+                },
+                {
+                    "name": "Neck",
+                    "description": "Around base of neck",
+                    "unit": "cm",
+                    "typical_range": [
+                        32,
+                        42
+                    ],
+                    "why": "For collar fit",
+                    "measurement_guide": "Loosely around neck base",
+                    "validation_min": 28,
+                    "validation_max": 50,
+                    "key": "neckCircumference",
+                    "required": true
+                },
+                {
+                    "name": "Back Length",
+                    "description": "Neck base to waist",
+                    "unit": "cm",
+                    "typical_range": [
+                        38,
+                        48
+                    ],
+                    "why": "For bodice length",
+                    "measurement_guide": "From prominent vertebra down to waist",
+                    "validation_min": 30,
+                    "validation_max": 60,
+                    "key": "hpsToWaistBack",
+                    "required": true
+                },
+                {
+                    "name": "Front Length",
+                    "description": "Shoulder/neck over bust to waist",
+                    "unit": "cm",
+                    "typical_range": [
+                        40,
+                        52
+                    ],
+                    "why": "For bust dart placement",
+                    "measurement_guide": "From shoulder, over bust, to waist",
+                    "validation_min": 32,
+                    "validation_max": 65,
+                    "key": "hpsToWaistFront",
+                    "required": true
+                },
+                {
+                    "name": "Arm Length",
+                    "description": "Shoulder to wrist",
+                    "unit": "cm",
+                    "typical_range": [
+                        55,
+                        70
+                    ],
+                    "why": "For sleeve length",
+                    "measurement_guide": "Arm slightly bent, shoulder to wrist bone",
+                    "validation_min": 45,
+                    "validation_max": 80,
+                    "key": "shoulderToWrist",
+                    "required": true
+                },
+                {
+                    "name": "Upper Arm",
+                    "description": "Around fullest part of upper arm",
+                    "unit": "cm",
+                    "typical_range": [
+                        25,
+                        40
+                    ],
+                    "why": "For sleeve width",
+                    "measurement_guide": "Around bicep at fullest, arm relaxed",
+                    "validation_min": 20,
+                    "validation_max": 50,
+                    "key": "bicepsCircumference",
+                    "required": true
+                },
+                {
+                    "name": "Garment Length",
+                    "description": "Shoulder to desired hem",
+                    "unit": "cm",
+                    "typical_range": [
+                        50,
+                        120
+                    ],
+                    "why": "For overall length",
+                    "measurement_guide": "From shoulder to where you want hem",
+                    "validation_min": 30,
+                    "validation_max": 180,
+                    "key": "garmentLength",
+                    "required": true
+                }
+            ],
+            "total_count": 11,
+            "garment_info": {
+                "subcategory": "mini_dress",
+                "detected_features": [
+                    "deep_v_neck",
+                    "tie_shoulder_straps",
+                    "empire_waist",
+                    "tiered_skirt",
+                    "a_line_skirt",
+                    "eyelet_fabric",
+                    "fitted_bodice"
+                ]
+            }
+        },
+        "measurements": {},
+        "fit_collector_state": null,
+        "created_at": "2025-12-21 23:09:46.322396"
+    },
+    "4c599e47-4096-4cb7-b8c1-10ffd91d3912": {
+        "stage": "UPLOAD",
+        "image_path": null,
+        "analysis": null,
+        "master_plan": null,
+        "complexity": null,
+        "measurement_form_config": null,
+        "measurements": {},
+        "fit_collector_state": null,
+        "created_at": "2025-12-22 00:16:45.265709"
+    },
+    "a69d18fe-c5c9-41d4-a3c7-d1aff79dad93": {
+        "stage": "UPLOAD",
+        "image_path": null,
+        "analysis": null,
+        "master_plan": null,
+        "complexity": null,
+        "measurement_form_config": null,
+        "measurements": {},
+        "fit_collector_state": null,
+        "created_at": "2025-12-22 00:41:32.674288"
+    },
+    "21a9b683-e66d-49e8-ade1-589582882e4d": {
+        "stage": "UPLOAD",
+        "image_path": null,
+        "analysis": null,
+        "master_plan": null,
+        "complexity": null,
+        "measurement_form_config": null,
+        "measurements": {},
+        "fit_collector_state": null,
+        "created_at": "2025-12-22 00:42:14.836738"
+    },
+    "f5830013-bec5-4dcf-ac37-e64c1fd69892": {
+        "stage": "UPLOAD",
+        "image_path": null,
+        "analysis": null,
+        "master_plan": null,
+        "complexity": null,
+        "measurement_form_config": null,
+        "measurements": {},
+        "fit_collector_state": null,
+        "created_at": "2025-12-22 00:44:02.203089"
+    },
+    "1c3163f8-03d8-4d0a-a773-47cbb2552409": {
+        "stage": "UPLOAD",
+        "image_path": null,
+        "analysis": null,
+        "master_plan": null,
+        "complexity": null,
+        "measurement_form_config": null,
+        "measurements": {},
+        "fit_collector_state": null,
+        "created_at": "2025-12-22 00:48:17.088560"
+    },
+    "aadfc695-8dec-41ac-883d-abeb15bb6c92": {
+        "stage": "UPLOAD",
+        "image_path": null,
+        "analysis": null,
+        "master_plan": null,
+        "complexity": null,
+        "measurement_form_config": null,
+        "measurements": {},
+        "fit_collector_state": null,
+        "created_at": "2025-12-22 01:02:06.091314"
+    },
+    "af18518d-82c5-4892-b64e-4782e99baf4c": {
+        "stage": "COMPLETE",
+        "image_path": "uploads\\ba9e6fd35dfc4534bf83d6a915809942_Screenshot 2025-12-21 230445.png",
+        "analysis": {
+            "garment_type": "dress",
+            "subcategory": "mini_dress",
+            "style_features": [
+                "deep_v_neck",
+                "tie_shoulder_straps",
+                "empire_waist",
+                "tiered_skirt",
+                "eyelet_detail",
+                "gathered_bodice"
+            ],
+            "construction_details": [
+                "invisible_zipper",
+                "gathered_skirt_tiers",
+                "fully_lined"
+            ],
+            "fabric_recommendations": [
+                {
+                    "name": "eyelet_cotton",
+                    "reason": "for decorative texture and breathability"
+                },
+                {
+                    "name": "cotton_voile",
+                    "reason": "lightweight and airy for lining"
+                }
+            ],
+            "key_sewing_techniques": [
+                "sewing_gathers",
+                "inserting_invisible_zipper",
+                "lining_a_garment",
+                "finishing_v_neckline",
+                "creating_tie_straps"
+            ]
+        },
+        "master_plan": {
+            "garment_type": "dress",
+            "subcategory": "mini_dress",
+            "inferred_pieces": [
+                "bodice_front",
+                "bodice_back"
+            ],
+            "key_sewing_techniques": [],
+            "fit_method": "standard_ease"
+        },
+        "complexity": {
+            "level": "standard",
+            "score": 40
+        },
+        "measurement_form_config": {
+            "form_fields": [
+                {
+                    "name": "Bust/Chest",
+                    "description": "Around fullest part of bust",
+                    "unit": "cm",
+                    "typical_range": [
+                        80,
+                        120
+                    ],
+                    "why": "For bodice width",
+                    "measurement_guide": "Tape around fullest part, parallel to floor",
+                    "validation_min": 65,
+                    "validation_max": 150,
+                    "key": "chestCircumference",
+                    "required": true
+                },
+                {
+                    "name": "Waist",
+                    "description": "At natural waist",
+                    "unit": "cm",
+                    "typical_range": [
+                        60,
+                        100
+                    ],
+                    "why": "For waist fit",
+                    "measurement_guide": "Tie string, measure where it sits naturally",
+                    "validation_min": 50,
+                    "validation_max": 130,
+                    "key": "waistCircumference",
+                    "required": true
+                },
+                {
+                    "name": "Back Length",
+                    "description": "Neck base to waist",
+                    "unit": "cm",
+                    "typical_range": [
+                        38,
+                        48
+                    ],
+                    "why": "For bodice length",
+                    "measurement_guide": "From prominent vertebra down to waist",
+                    "validation_min": 30,
+                    "validation_max": 60,
+                    "key": "hpsToWaistBack",
+                    "required": true
+                },
+                {
+                    "name": "Front Length",
+                    "description": "Shoulder/neck over bust to waist",
+                    "unit": "cm",
+                    "typical_range": [
+                        40,
+                        52
+                    ],
+                    "why": "For bust dart placement",
+                    "measurement_guide": "From shoulder, over bust, to waist",
+                    "validation_min": 32,
+                    "validation_max": 65,
+                    "key": "hpsToWaistFront",
+                    "required": true
+                },
+                {
+                    "name": "Garment Length",
+                    "description": "Shoulder to desired hem",
+                    "unit": "cm",
+                    "typical_range": [
+                        50,
+                        120
+                    ],
+                    "why": "For overall length",
+                    "measurement_guide": "From shoulder to where you want hem",
+                    "validation_min": 30,
+                    "validation_max": 180,
+                    "key": "garmentLength",
+                    "required": true
+                },
+                {
+                    "name": "Hips",
+                    "description": "Around fullest part of hips",
+                    "unit": "cm",
+                    "typical_range": [
+                        85,
+                        125
+                    ],
+                    "why": "For lower body fit",
+                    "measurement_guide": "Tape around widest part of hips/buttocks",
+                    "validation_min": 70,
+                    "validation_max": 160,
+                    "key": "hipCircumference",
+                    "required": true
+                },
+                {
+                    "name": "Neck",
+                    "description": "Around base of neck",
+                    "unit": "cm",
+                    "typical_range": [
+                        32,
+                        42
+                    ],
+                    "why": "For collar fit",
+                    "measurement_guide": "Loosely around neck base",
+                    "validation_min": 28,
+                    "validation_max": 50,
+                    "key": "neckCircumference",
+                    "required": true
+                },
+                {
+                    "name": "Under Bust",
+                    "description": "Under bust at ribcage",
+                    "unit": "cm",
+                    "typical_range": [
+                        65,
+                        95
+                    ],
+                    "why": "For empire waist placement",
+                    "measurement_guide": "Tape around ribcage below bust",
+                    "validation_min": 55,
+                    "validation_max": 120,
+                    "key": "underbust",
+                    "required": true
+                }
+            ],
+            "total_count": 8,
+            "garment_info": {
+                "subcategory": "mini_dress",
+                "detected_features": [
+                    "deep_v_neck",
+                    "tie_shoulder_straps",
+                    "empire_waist",
+                    "tiered_skirt",
+                    "eyelet_detail",
+                    "gathered_bodice"
+                ]
+            }
+        },
+        "measurements": {
+            "chestCircumference": 80.0,
+            "waistCircumference": 60.0,
+            "hpsToWaistBack": 40.0,
+            "hpsToWaistFront": 40.0,
+            "garmentLength": 120.0,
+            "hipCircumference": 90.0,
+            "neckCircumference": 32.0,
+            "underbust": 65.0
+        },
+        "fit_collector_state": null,
+        "created_at": "2025-12-22 01:23:20.148496",
+        "vision_analysis": {
+            "garment_type": "dress",
+            "subcategory": "mini_dress",
+            "style_features": [
+                "deep_v_neck",
+                "tie_shoulder_straps",
+                "empire_waist",
+                "tiered_skirt",
+                "eyelet_detail",
+                "gathered_bodice"
+            ],
+            "construction_details": [
+                "invisible_zipper",
+                "gathered_skirt_tiers",
+                "fully_lined"
+            ],
+            "fabric_recommendations": [
+                {
+                    "name": "eyelet_cotton",
+                    "reason": "for decorative texture and breathability"
+                },
+                {
+                    "name": "cotton_voile",
+                    "reason": "lightweight and airy for lining"
+                }
+            ],
+            "key_sewing_techniques": [
+                "sewing_gathers",
+                "inserting_invisible_zipper",
+                "lining_a_garment",
+                "finishing_v_neckline",
+                "creating_tie_straps"
+            ]
+        },
+        "fit_preferences": {
+            "overall_ease": "Standard"
+        }
+    },
+    "03607a9d-5164-451e-b51d-ced90192b627": {
+        "stage": "COMPLETE",
+        "image_path": "uploads\\6d0376e1c5254521b7cbdce221c73dbe_Screenshot 2025-12-21 230445.png",
+        "analysis": {
+            "garment_type": "dress",
+            "subcategory": "mini_dress",
+            "style_features": [
+                "deep_v_neck",
+                "tie_shoulder_straps",
+                "empire_waist",
+                "tiered_skirt",
+                "eyelet_fabric"
+            ],
+            "construction_details": [
+                "gathered_bodice",
+                "gathered_skirt_tiers",
+                "invisible_zipper"
+            ],
+            "fabric_recommendations": [
+                {
+                    "name": "eyelet_cotton",
+                    "reason": "breathable, textured, ideal for gathers"
+                },
+                {
+                    "name": "cotton_lawn",
+                    "reason": "lightweight, drapes well for gathers, comfortable"
+                }
+            ],
+            "key_sewing_techniques": [
+                "sewing_gathers",
+                "attaching_tie_straps",
+                "inserting_invisible_zipper",
+                "finishing_v_neckline"
+            ]
+        },
+        "master_plan": {
+            "garment_type": "dress",
+            "subcategory": "mini_dress",
+            "inferred_pieces": [
+                "bodice_front",
+                "skirt"
+            ],
+            "key_sewing_techniques": [],
+            "fit_method": "standard_ease"
+        },
+        "complexity": {
+            "level": "standard",
+            "score": 40
+        },
+        "measurement_form_config": {
+            "form_fields": [
+                {
+                    "name": "Bust/Chest",
+                    "description": "Around fullest part of bust",
+                    "unit": "cm",
+                    "typical_range": [
+                        80,
+                        120
+                    ],
+                    "why": "For bodice width",
+                    "measurement_guide": "Tape around fullest part, parallel to floor",
+                    "validation_min": 65,
+                    "validation_max": 150,
+                    "key": "chestCircumference",
+                    "required": true
+                },
+                {
+                    "name": "Waist",
+                    "description": "At natural waist",
+                    "unit": "cm",
+                    "typical_range": [
+                        60,
+                        100
+                    ],
+                    "why": "For waist fit",
+                    "measurement_guide": "Tie string, measure where it sits naturally",
+                    "validation_min": 50,
+                    "validation_max": 130,
+                    "key": "waistCircumference",
+                    "required": true
+                },
+                {
+                    "name": "Back Length",
+                    "description": "Neck base to waist",
+                    "unit": "cm",
+                    "typical_range": [
+                        38,
+                        48
+                    ],
+                    "why": "For bodice length",
+                    "measurement_guide": "From prominent vertebra down to waist",
+                    "validation_min": 30,
+                    "validation_max": 60,
+                    "key": "hpsToWaistBack",
+                    "required": true
+                },
+                {
+                    "name": "Front Length",
+                    "description": "Shoulder/neck over bust to waist",
+                    "unit": "cm",
+                    "typical_range": [
+                        40,
+                        52
+                    ],
+                    "why": "For bust dart placement",
+                    "measurement_guide": "From shoulder, over bust, to waist",
+                    "validation_min": 32,
+                    "validation_max": 65,
+                    "key": "hpsToWaistFront",
+                    "required": true
+                },
+                {
+                    "name": "Garment Length",
+                    "description": "Shoulder to desired hem",
+                    "unit": "cm",
+                    "typical_range": [
+                        50,
+                        120
+                    ],
+                    "why": "For overall length",
+                    "measurement_guide": "From shoulder to where you want hem",
+                    "validation_min": 30,
+                    "validation_max": 180,
+                    "key": "garmentLength",
+                    "required": true
+                },
+                {
+                    "name": "Hips",
+                    "description": "Around fullest part of hips",
+                    "unit": "cm",
+                    "typical_range": [
+                        85,
+                        125
+                    ],
+                    "why": "For lower body fit",
+                    "measurement_guide": "Tape around widest part of hips/buttocks",
+                    "validation_min": 70,
+                    "validation_max": 160,
+                    "key": "hipCircumference",
+                    "required": true
+                },
+                {
+                    "name": "Neck",
+                    "description": "Around base of neck",
+                    "unit": "cm",
+                    "typical_range": [
+                        32,
+                        42
+                    ],
+                    "why": "For collar fit",
+                    "measurement_guide": "Loosely around neck base",
+                    "validation_min": 28,
+                    "validation_max": 50,
+                    "key": "neckCircumference",
+                    "required": true
+                },
+                {
+                    "name": "Under Bust",
+                    "description": "Under bust at ribcage",
+                    "unit": "cm",
+                    "typical_range": [
+                        65,
+                        95
+                    ],
+                    "why": "For empire waist placement",
+                    "measurement_guide": "Tape around ribcage below bust",
+                    "validation_min": 55,
+                    "validation_max": 120,
+                    "key": "underbust",
+                    "required": true
+                }
+            ],
+            "total_count": 8,
+            "garment_info": {
+                "subcategory": "mini_dress",
+                "detected_features": [
+                    "deep_v_neck",
+                    "tie_shoulder_straps",
+                    "empire_waist",
+                    "tiered_skirt",
+                    "eyelet_fabric"
+                ]
+            }
+        },
+        "measurements": {
+            "chestCircumference": 80.0,
+            "waistCircumference": 60.0,
+            "hpsToWaistBack": 40.0,
+            "hpsToWaistFront": 40.0,
+            "garmentLength": 120.0,
+            "hipCircumference": 90.0,
+            "neckCircumference": 32.0,
+            "underbust": 65.0
+        },
+        "fit_collector_state": null,
+        "created_at": "2025-12-22 01:50:37.739960",
+        "vision_analysis": {
+            "garment_type": "dress",
+            "subcategory": "mini_dress",
+            "style_features": [
+                "deep_v_neck",
+                "tie_shoulder_straps",
+                "empire_waist",
+                "tiered_skirt",
+                "eyelet_fabric"
+            ],
+            "construction_details": [
+                "gathered_bodice",
+                "gathered_skirt_tiers",
+                "invisible_zipper"
+            ],
+            "fabric_recommendations": [
+                {
+                    "name": "eyelet_cotton",
+                    "reason": "breathable, textured, ideal for gathers"
+                },
+                {
+                    "name": "cotton_lawn",
+                    "reason": "lightweight, drapes well for gathers, comfortable"
+                }
+            ],
+            "key_sewing_techniques": [
+                "sewing_gathers",
+                "attaching_tie_straps",
+                "inserting_invisible_zipper",
+                "finishing_v_neckline"
+            ]
+        },
+        "fit_preferences": {
+            "overall_ease": "Standard"
+        }
+    },
+    "4faa0275-8576-46c6-ac10-9c439baef696": {
+        "stage": "COMPLETE",
+        "image_path": "uploads\\57ac9ef5c1314cca8eca3dee54359abb_Screenshot 2025-12-21 230445.png",
+        "analysis": {
+            "garment_type": "dress",
+            "subcategory": "mini_dress",
+            "style_features": [
+                "deep_v_neck",
+                "tie_shoulder_straps",
+                "smocked_waist",
+                "tiered_skirt",
+                "eyelet_fabric"
+            ],
+            "construction_details": [
+                "gathered_bodice",
+                "gathered_skirt_tiers"
+            ],
+            "fabric_recommendations": [
+                {
+                    "name": "cotton_eyelet",
+                    "reason": "lightweight_and_breathable_with_texture"
+                },
+                {
+                    "name": "embroidered_cotton",
+                    "reason": "adds_detail_and_structure_while_remaining_airy"
+                }
+            ],
+            "key_sewing_techniques": [
+                "gathering_fabric",
+                "creating_tie_straps",
+                "attaching_skirt_tiers",
+                "smocking_or_elastic_casing_at_waist",
+                "finishing_v_neckline"
+            ]
+        },
+        "master_plan": {
+            "garment_type": "dress",
+            "subcategory": "mini_dress",
+            "inferred_pieces": [
+                "bodice_front",
+                "skirt"
+            ],
+            "key_sewing_techniques": [],
+            "fit_method": "standard_ease"
+        },
+        "complexity": {
+            "level": "standard",
+            "score": 40
+        },
+        "measurement_form_config": {
+            "form_fields": [
+                {
+                    "name": "Bust/Chest",
+                    "description": "Around fullest part of bust",
+                    "unit": "cm",
+                    "typical_range": [
+                        80,
+                        120
+                    ],
+                    "why": "For bodice width",
+                    "measurement_guide": "Tape around fullest part, parallel to floor",
+                    "validation_min": 65,
+                    "validation_max": 150,
+                    "key": "chestCircumference",
+                    "required": true
+                },
+                {
+                    "name": "Waist",
+                    "description": "At natural waist",
+                    "unit": "cm",
+                    "typical_range": [
+                        60,
+                        100
+                    ],
+                    "why": "For waist fit",
+                    "measurement_guide": "Tie string, measure where it sits naturally",
+                    "validation_min": 50,
+                    "validation_max": 130,
+                    "key": "waistCircumference",
+                    "required": true
+                },
+                {
+                    "name": "Back Length",
+                    "description": "Neck base to waist",
+                    "unit": "cm",
+                    "typical_range": [
+                        38,
+                        48
+                    ],
+                    "why": "For bodice length",
+                    "measurement_guide": "From prominent vertebra down to waist",
+                    "validation_min": 30,
+                    "validation_max": 60,
+                    "key": "hpsToWaistBack",
+                    "required": true
+                },
+                {
+                    "name": "Front Length",
+                    "description": "Shoulder/neck over bust to waist",
+                    "unit": "cm",
+                    "typical_range": [
+                        40,
+                        52
+                    ],
+                    "why": "For bust dart placement",
+                    "measurement_guide": "From shoulder, over bust, to waist",
+                    "validation_min": 32,
+                    "validation_max": 65,
+                    "key": "hpsToWaistFront",
+                    "required": true
+                },
+                {
+                    "name": "Garment Length",
+                    "description": "Shoulder to desired hem",
+                    "unit": "cm",
+                    "typical_range": [
+                        50,
+                        120
+                    ],
+                    "why": "For overall length",
+                    "measurement_guide": "From shoulder to where you want hem",
+                    "validation_min": 30,
+                    "validation_max": 180,
+                    "key": "garmentLength",
+                    "required": true
+                },
+                {
+                    "name": "Hips",
+                    "description": "Around fullest part of hips",
+                    "unit": "cm",
+                    "typical_range": [
+                        85,
+                        125
+                    ],
+                    "why": "For lower body fit",
+                    "measurement_guide": "Tape around widest part of hips/buttocks",
+                    "validation_min": 70,
+                    "validation_max": 160,
+                    "key": "hipCircumference",
+                    "required": true
+                },
+                {
+                    "name": "Neck",
+                    "description": "Around base of neck",
+                    "unit": "cm",
+                    "typical_range": [
+                        32,
+                        42
+                    ],
+                    "why": "For collar fit",
+                    "measurement_guide": "Loosely around neck base",
+                    "validation_min": 28,
+                    "validation_max": 50,
+                    "key": "neckCircumference",
+                    "required": true
+                }
+            ],
+            "total_count": 7,
+            "garment_info": {
+                "subcategory": "mini_dress",
+                "detected_features": [
+                    "deep_v_neck",
+                    "tie_shoulder_straps",
+                    "smocked_waist",
+                    "tiered_skirt",
+                    "eyelet_fabric"
+                ]
+            }
+        },
+        "measurements": {
+            "chestCircumference": 80.0,
+            "waistCircumference": 60.0,
+            "hpsToWaistBack": 40.0,
+            "hpsToWaistFront": 40.0,
+            "garmentLength": 120.0,
+            "hipCircumference": 90.0,
+            "neckCircumference": 32.0
+        },
+        "fit_collector_state": null,
+        "created_at": "2025-12-22 04:11:42.637391",
+        "vision_analysis": {
+            "garment_type": "dress",
+            "subcategory": "mini_dress",
+            "style_features": [
+                "deep_v_neck",
+                "tie_shoulder_straps",
+                "smocked_waist",
+                "tiered_skirt",
+                "eyelet_fabric"
+            ],
+            "construction_details": [
+                "gathered_bodice",
+                "gathered_skirt_tiers"
+            ],
+            "fabric_recommendations": [
+                {
+                    "name": "cotton_eyelet",
+                    "reason": "lightweight_and_breathable_with_texture"
+                },
+                {
+                    "name": "embroidered_cotton",
+                    "reason": "adds_detail_and_structure_while_remaining_airy"
+                }
+            ],
+            "key_sewing_techniques": [
+                "gathering_fabric",
+                "creating_tie_straps",
+                "attaching_skirt_tiers",
+                "smocking_or_elastic_casing_at_waist",
+                "finishing_v_neckline"
+            ]
+        },
+        "fit_preferences": {
+            "overall_ease": "Standard"
+        }
+    },
+    "da43f469-7aa6-47d1-83ef-08798c498af9": {
+        "stage": "QUESTIONNAIRE",
+        "image_path": "uploads\\1c39403693094b709c865448e055bc52_Screenshot 2025-10-29 100618.png",
+        "analysis": {
+            "garment_type": "dress",
+            "subcategory": "mini_dress",
+            "style_features": [
+                "deep_v_neck",
+                "tie_shoulder_straps",
+                "fitted_bodice",
+                "gathered_waist",
+                "tiered_skirt",
+                "broderie_anglaise_fabric"
+            ],
+            "construction_details": [
+                "gathered_bodice_to_waistband",
+                "gathered_skirt_tiers",
+                "waistband_seam",
+                "bow_ties_at_shoulder",
+                "invisible_zipper"
+            ],
+            "fabric_recommendations": [
+                {
+                    "name": "cotton_broderie_anglaise",
+                    "reason": "lightweight, breathable, distinct texture, holds gathers well, suitable for summer wear"
+                },
+                {
+                    "name": "embroidered_cotton_voile",
+                    "reason": "soft drape, breathable, elegant embroidery, suitable for tiered designs"
+                }
+            ],
+            "key_sewing_techniques": [
+                "gathering_fabric",
+                "attaching_waistband",
+                "inserting_invisible_zipper",
+                "constructing_tie_straps",
+                "working_with_embroidered_fabric"
+            ]
+        },
+        "master_plan": null,
+        "complexity": null,
+        "proportions": {},
+        "formula_adjustments": {},
+        "technical_drawing": null,
+        "questionnaire": {
+            "questions": [
+                {
+                    "id": "garment_confirmation",
+                    "question": "I detected a **dress**. Is this correct?",
+                    "type": "yes_no",
+                    "options": [
+                        "yes",
+                        "no"
+                    ],
+                    "follow_up": "If no, what type of garment is it?"
+                },
+                {
+                    "id": "closure_type",
+                    "question": "What type of closure would you like?",
+                    "type": "choice",
+                    "options": [
+                        "Invisible zipper (side)",
+                        "Exposed zipper (back)",
+                        "Buttons (front)",
+                        "Buttons (back)",
+                        "No closure (pullover)",
+                        "Hook and eye"
+                    ],
+                    "required": true
+                },
+                {
+                    "id": "zipper_position",
+                    "question": "Where should the zipper be placed?",
+                    "type": "choice",
+                    "depends_on": {
+                        "closure_type": [
+                            "zipper"
+                        ]
+                    },
+                    "options": [
+                        "Left side seam",
+                        "Right side seam",
+                        "Center back",
+                        "Invisible in seam"
+                    ]
+                },
+                {
+                    "id": "sleeve_type",
+                    "question": "What sleeve style? (Detected: unknown)",
+                    "type": "choice",
+                    "options": [
+                        "Long fitted sleeve",
+                        "Long loose sleeve",
+                        "3/4 length sleeve",
+                        "Short sleeve (just past shoulder)",
+                        "Cap sleeve (covers shoulder)",
+                        "Sleeveless",
+                        "Straps"
+                    ],
+                    "required": true
+                },
+                {
+                    "id": "neckline_type",
+                    "question": "Neckline style? (Detected: unknown)",
+                    "type": "choice",
+                    "options": [
+                        "Round crew neck",
+                        "V-neck (shallow)",
+                        "V-neck (deep)",
+                        "Square neckline",
+                        "Scoop neck",
+                        "Boat neck",
+                        "High neck/mock turtleneck",
+                        "Halter neck",
+                        "Off-shoulder"
+                    ],
+                    "required": true
+                },
+                {
+                    "id": "pockets",
+                    "question": "Do you want pockets?",
+                    "type": "choice",
+                    "options": [
+                        "No pockets",
+                        "Patch pockets (sewn on surface)",
+                        "In-seam pockets (hidden in seam)",
+                        "Welt pockets (formal, with flap)",
+                        "Kangaroo pocket (front)",
+                        "Both patch and in-seam"
+                    ]
+                },
+                {
+                    "id": "skirt_type",
+                    "question": "What skirt style?",
+                    "type": "choice",
+                    "options": [
+                        "A-line (fitted waist, flares out)",
+                        "Pencil (straight, fitted)",
+                        "Circle skirt (very full)",
+                        "Pleated",
+                        "Gathered/Full",
+                        "Tiered"
+                    ],
+                    "required": true
+                },
+                {
+                    "id": "skirt_length",
+                    "question": "Desired length?",
+                    "type": "choice",
+                    "options": [
+                        "Mini (above knee)",
+                        "Knee length",
+                        "Midi (mid-calf)",
+                        "Maxi (ankle length)",
+                        "Custom length"
+                    ],
+                    "required": true
+                },
+                {
+                    "id": "waist_fit",
+                    "question": "How should it fit at the waist?",
+                    "type": "choice",
+                    "options": [
+                        "Fitted (no ease)",
+                        "Slightly relaxed (+2cm ease)",
+                        "Loose (+5cm ease)",
+                        "Very loose (+10cm ease)"
+                    ],
+                    "required": true
+                },
+                {
+                    "id": "bust_fit",
+                    "question": "Bust fit preference?",
+                    "type": "choice",
+                    "options": [
+                        "Very fitted (no ease)",
+                        "Fitted (+2cm ease)",
+                        "Relaxed (+5cm ease)",
+                        "Loose (+8cm ease)"
+                    ],
+                    "required": true
+                },
+                {
+                    "id": "bust_darts",
+                    "question": "Bust dart style?",
+                    "type": "choice",
+                    "options": [
+                        "Standard dart from side",
+                        "Princess seams",
+                        "No darts (loose fit)",
+                        "Gather instead of darts"
+                    ]
+                },
+                {
+                    "id": "hem_style",
+                    "question": "Hem finish preference?",
+                    "type": "choice",
+                    "options": [
+                        "Simple fold (2cm)",
+                        "Narrow roll hem",
+                        "Faced hem",
+                        "Binding/trim",
+                        "Curved/hi-lo hem"
+                    ]
+                },
+                {
+                    "id": "lining",
+                    "question": "Do you want lining?",
+                    "type": "choice",
+                    "options": [
+                        "No lining",
+                        "Full lining",
+                        "Half lining (bodice only)",
+                        "Facing only (neck and armholes)"
+                    ]
+                },
+                {
+                    "id": "gathering",
+                    "question": "Where should gathering/ruffles be?",
+                    "type": "multi_choice",
+                    "options": [
+                        "Shoulders",
+                        "Waist",
+                        "Cuffs",
+                        "Hem",
+                        "Neckline"
+                    ]
+                },
+                {
+                    "id": "measurement_unit",
+                    "question": "What unit for measurements?",
+                    "type": "choice",
+                    "options": [
+                        "Centimeters (cm)",
+                        "Inches (in)"
+                    ],
+                    "required": true
+                },
+                {
+                    "id": "special_requests",
+                    "question": "Any special requests or modifications?",
+                    "type": "text",
+                    "optional": true,
+                    "placeholder": "E.g., 'Add contrast piping', 'Extra long torso', 'Maternity panel'"
+                }
+            ],
+            "current_step": 0,
+            "answers": {}
+        },
+        "user_preferences": {},
+        "measurement_form_config": null,
+        "measurements": {},
+        "fit_collector_state": null,
+        "created_at": "2026-01-15 14:21:20.128212",
+        "vision_analysis": {
+            "garment_type": "dress",
+            "subcategory": "mini_dress",
+            "style_features": [
+                "deep_v_neck",
+                "tie_shoulder_straps",
+                "fitted_bodice",
+                "gathered_waist",
+                "tiered_skirt",
+                "broderie_anglaise_fabric"
+            ],
+            "construction_details": [
+                "gathered_bodice_to_waistband",
+                "gathered_skirt_tiers",
+                "waistband_seam",
+                "bow_ties_at_shoulder",
+                "invisible_zipper"
+            ],
+            "fabric_recommendations": [
+                {
+                    "name": "cotton_broderie_anglaise",
+                    "reason": "lightweight, breathable, distinct texture, holds gathers well, suitable for summer wear"
+                },
+                {
+                    "name": "embroidered_cotton_voile",
+                    "reason": "soft drape, breathable, elegant embroidery, suitable for tiered designs"
+                }
+            ],
+            "key_sewing_techniques": [
+                "gathering_fabric",
+                "attaching_waistband",
+                "inserting_invisible_zipper",
+                "constructing_tie_straps",
+                "working_with_embroidered_fabric"
+            ]
+        }
+    },
+    "1e3384d4-0151-4bdf-8731-5e1b29906230": {
+        "stage": "UPLOAD",
+        "image_path": null,
+        "analysis": null,
+        "master_plan": null,
+        "complexity": null,
+        "proportions": null,
+        "formula_adjustments": null,
+        "technical_drawing": null,
+        "questionnaire": null,
+        "user_preferences": {},
+        "measurement_form_config": null,
+        "measurements": {},
+        "fit_collector_state": null,
+        "created_at": "2026-01-15 14:29:02.567458"
+    },
+    "64391483-9674-46a8-8ffd-b0473506817f": {
+        "stage": "COMPLETE",
+        "image_path": "uploads\\1575aaa1c4044bc3bee7345b1ddeefbe_Screenshot 2025-10-29 100618.png",
+        "analysis": {
+            "garment_type": "dress",
+            "subcategory": "mini_dress",
+            "style_features": [
+                "deep_v_neck",
+                "tie_shoulder_straps",
+                "empire_waist",
+                "tiered_skirt",
+                "eyelet_fabric"
+            ],
+            "construction_details": [
+                "gathered_bodice",
+                "gathered_tiers",
+                "invisible_zipper_closure",
+                "fully_lined"
+            ],
+            "fabric_recommendations": [
+                {
+                    "name": "cotton_eyelet",
+                    "reason": "breathable, textured, holds gathers well for bodice and tiers"
+                },
+                {
+                    "name": "embroidered_cotton",
+                    "reason": "offers decorative texture, good drape for a full skirt, breathable"
+                },
+                {
+                    "name": "linen_blend",
+                    "reason": "lightweight, breathable, provides a structured yet relaxed drape suitable for summer"
+                }
+            ],
+            "key_sewing_techniques": [
+                "sewing_gathers",
+                "inserting_invisible_zipper",
+                "finishing_v_neckline",
+                "attaching_tie_straps",
+                "lining_a_garment"
+            ]
+        },
+        "master_plan": {
+            "garment_type": "dress",
+            "subcategory": "mini_dress",
+            "inferred_pieces": [
+                "body_front",
+                "body_back",
+                "skirt"
+            ],
+            "key_sewing_techniques": [],
+            "fit_method": "standard_ease"
+        },
+        "complexity": null,
+        "proportions": {},
+        "formula_adjustments": {},
+        "technical_drawing": null,
+        "questionnaire": null,
+        "user_preferences": {},
+        "measurement_form_config": {
+            "form_fields": [
+                {
+                    "name": "Bust/Chest",
+                    "description": "Around fullest part of bust",
+                    "unit": "cm",
+                    "typical_range": [
+                        80,
+                        120
+                    ],
+                    "why": "For bodice width",
+                    "measurement_guide": "Tape around fullest part, parallel to floor",
+                    "validation_min": 65,
+                    "validation_max": 150,
+                    "key": "chestCircumference",
+                    "required": true
+                },
+                {
+                    "name": "Waist",
+                    "description": "At natural waist",
+                    "unit": "cm",
+                    "typical_range": [
+                        60,
+                        100
+                    ],
+                    "why": "For waist fit",
+                    "measurement_guide": "Tie string, measure where it sits naturally",
+                    "validation_min": 50,
+                    "validation_max": 130,
+                    "key": "waistCircumference",
+                    "required": true
+                },
+                {
+                    "name": "Back Length",
+                    "description": "Neck base to waist",
+                    "unit": "cm",
+                    "typical_range": [
+                        38,
+                        48
+                    ],
+                    "why": "For bodice length",
+                    "measurement_guide": "From prominent vertebra down to waist",
+                    "validation_min": 30,
+                    "validation_max": 60,
+                    "key": "hpsToWaistBack",
+                    "required": true
+                },
+                {
+                    "name": "Front Length",
+                    "description": "Shoulder/neck over bust to waist",
+                    "unit": "cm",
+                    "typical_range": [
+                        40,
+                        52
+                    ],
+                    "why": "For bust dart placement",
+                    "measurement_guide": "From shoulder, over bust, to waist",
+                    "validation_min": 32,
+                    "validation_max": 65,
+                    "key": "hpsToWaistFront",
+                    "required": true
+                },
+                {
+                    "name": "Garment Length",
+                    "description": "Shoulder to desired hem",
+                    "unit": "cm",
+                    "typical_range": [
+                        50,
+                        120
+                    ],
+                    "why": "For overall length",
+                    "measurement_guide": "From shoulder to where you want hem",
+                    "validation_min": 30,
+                    "validation_max": 180,
+                    "key": "garmentLength",
+                    "required": true
+                },
+                {
+                    "name": "Hips",
+                    "description": "Around fullest part of hips",
+                    "unit": "cm",
+                    "typical_range": [
+                        85,
+                        125
+                    ],
+                    "why": "For lower body fit",
+                    "measurement_guide": "Tape around widest part of hips/buttocks",
+                    "validation_min": 70,
+                    "validation_max": 160,
+                    "key": "hipCircumference",
+                    "required": true
+                },
+                {
+                    "name": "Neck",
+                    "description": "Around base of neck",
+                    "unit": "cm",
+                    "typical_range": [
+                        32,
+                        42
+                    ],
+                    "why": "For collar fit",
+                    "measurement_guide": "Loosely around neck base",
+                    "validation_min": 28,
+                    "validation_max": 50,
+                    "key": "neckCircumference",
+                    "required": true
+                },
+                {
+                    "name": "Under Bust",
+                    "description": "Under bust at ribcage",
+                    "unit": "cm",
+                    "typical_range": [
+                        65,
+                        95
+                    ],
+                    "why": "For empire waist placement",
+                    "measurement_guide": "Tape around ribcage below bust",
+                    "validation_min": 55,
+                    "validation_max": 120,
+                    "key": "underbust",
+                    "required": true
+                }
+            ],
+            "total_count": 8,
+            "garment_info": {
+                "subcategory": "dress",
+                "detected_features": [
+                    "deep_v_neck",
+                    "tie_shoulder_straps",
+                    "empire_waist",
+                    "tiered_skirt",
+                    "eyelet_fabric"
+                ]
+            }
+        },
+        "measurements": {
+            "chestCircumference": 80.0,
+            "waistCircumference": 64.0,
+            "hpsToWaistBack": 40.0,
+            "hpsToWaistFront": 40.0,
+            "garmentLength": 52.0,
+            "hipCircumference": 85.0,
+            "neckCircumference": 32.0,
+            "underbust": 66.0
+        },
+        "fit_collector_state": null,
+        "created_at": "2026-01-15 14:32:12.908374",
+        "vision_analysis": {
+            "garment_type": "dress",
+            "subcategory": "mini_dress",
+            "style_features": [
+                "deep_v_neck",
+                "tie_shoulder_straps",
+                "empire_waist",
+                "tiered_skirt",
+                "eyelet_fabric"
+            ],
+            "construction_details": [
+                "gathered_bodice",
+                "gathered_tiers",
+                "invisible_zipper_closure",
+                "fully_lined"
+            ],
+            "fabric_recommendations": [
+                {
+                    "name": "cotton_eyelet",
+                    "reason": "breathable, textured, holds gathers well for bodice and tiers"
+                },
+                {
+                    "name": "embroidered_cotton",
+                    "reason": "offers decorative texture, good drape for a full skirt, breathable"
+                },
+                {
+                    "name": "linen_blend",
+                    "reason": "lightweight, breathable, provides a structured yet relaxed drape suitable for summer"
+                }
+            ],
+            "key_sewing_techniques": [
+                "sewing_gathers",
+                "inserting_invisible_zipper",
+                "finishing_v_neckline",
+                "attaching_tie_straps",
+                "lining_a_garment"
+            ]
+        },
+        "fit_preferences": {
+            "overall_ease": "Close-fitting"
+        }
+    }
+}

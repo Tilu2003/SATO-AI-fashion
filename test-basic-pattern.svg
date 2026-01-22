@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" 
+     width="880.0mm" 
+     height="720mm" 
+     viewBox="0 0 880.0 720">
+  <style>
+    .fabric { fill: none; stroke: #000; stroke-width: 2; }
+    .grainline { stroke: #666; stroke-width: 1; }
+    .text-center { text-anchor: middle; font-family: Arial; font-size: 16px; fill: #000; }
+    .text-sm { font-size: 12px; }
+    .text-xs { font-size: 10px; }
+    .dashed { stroke-dasharray: 10,5; stroke: #999; }
+  </style>
+  
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="5" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#666"/>
+    </marker>
+  </defs>
+  
+  <g transform="translate(20, 40)">
+    
+    <g id="bodice-front">
+      <path class="fabric" d="
+        M 120.0,60
+        L 0,90
+        L 0,420
+        L 0,620
+        L 240.0,620
+        L 240.0,420
+        L 240.0,126.66666666666667
+        C 240.0,63.333333333333336 155.0,10 120.0,60
+        Z
+      " />
+      <text x="120.0" y="40" class="text-center">FRONT</text>
+      <text x="120.0" y="25" class="text-center text-sm">Cut 2 (mirrored)</text>
+      
+      <!-- Grain line -->
+      <line x1="120.0" y1="110" x2="120.0" y2="570" 
+            class="grainline" stroke-dasharray="5,5"/>
+      <text x="130.0" y="340.0" class="text-xs">Grain</text>
+    </g>
+    
+    
+    <g id="bodice-back" transform="translate(290.0, 0)">
+      <path class="fabric" d="
+        M 120.0,40
+        L 0,60
+        L 0,420
+        L 0,620
+        L 240.0,620
+        L 240.0,420
+        L 240.0,126.66666666666667
+        C 240.0,63.333333333333336 155.0,10 120.0,40
+        Z
+      " />
+      <text x="120.0" y="20" class="text-center">BACK</text>
+      <text x="120.0" y="5" class="text-center text-sm">Cut 2 (mirrored)</text>
+      
+      <!-- Grain line -->
+      <line x1="120.0" y1="90" x2="120.0" y2="570" 
+            class="grainline" stroke-dasharray="5,5"/>
+    </g>
+    
+    
+        <g id="sleeve" transform="translate(580.0, 0)">
+          <path class="fabric" d="
+            M 171.0,0
+            C 201.0,25.333333333333332 211.0,38.0 171.0,76.0
+            L 92.8,598.0
+            L -92.8,598.0
+            L -171.0,76.0
+            C -211.0,38.0 -201.0,25.333333333333332 -171.0,0
+            Z
+          " />
+          <text x="0" y="-10" class="text-center">SLEEVE</text>
+          <text x="0" y="-25" class="text-center text-sm">Cut 2</text>
+          
+          <!-- Grain line -->
+          <line x1="0" y1="96.0" x2="0" y2="578.0" 
+                class="grainline" stroke-dasharray="5,5"/>
+        </g>
+        
+    
+    <!-- Pattern info -->
+    <text x="10" y="-10" class="text-sm" style="fill: #333;">
+      Pattern: LONG SLEEVE FEMALE GARMENT | Neckline: ROUND
+    </text>
+  </g>
+</svg>

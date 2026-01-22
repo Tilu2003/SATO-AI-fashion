@@ -1,0 +1,20 @@
+{
+  "pattern": "breanna",
+  "measurements": {
+    "chest": 920,
+    "waist": 720,
+    "hips": 980,
+    "neck": 360,
+    "hpsToWaistBack": 420,
+    "hpsToBust": 400,
+    "waistToHips": 200,
+    "shoulderToShoulder": 420,
+    "shoulderSlope": 55,
+    "biceps": 320,
+    "bustFront": 460,
+    "bustSpan": 175,
+    "highBust": 874,
+    "highBustFront": 442
+  },
+  "options": {}
+}
