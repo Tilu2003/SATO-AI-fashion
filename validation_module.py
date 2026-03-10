@@ -1,81 +1,52 @@
 # ============================================================================
 # FILE: validation_module.py
-# PURPOSE: Placeholder for 3D validation
+# PURPOSE: Pattern quality validation and scoring
 # ============================================================================
 
 from typing import Dict, Any
 
+
 def run_3d_validation(pattern_data: Dict[str, Any], measurements: Dict[str, Any]) -> Dict[str, Any]:
-    """Stub for 3D validation logic"""
-    # Placeholder: Pattern looks good based on confidence and measurements
-    score = pattern_data.get("validation", {}).get("score", 90) 
-    return {"status": "SUCCESS", "score": score}
+    """
+    Validates a generated pattern against user measurements.
+    Scores pattern quality based on confidence and measurement coverage.
+    """
+    issues = []
+    score = 100
 
-# ============================================================================
-# FILE: search_module.py
-# PURPOSE: YouTube tutorial search stub
-# ============================================================================
+    # Penalise low AI confidence
+    confidence = pattern_data.get("translation_confidence", pattern_data.get("confidence_score", 0.85))
+    if confidence < 0.5:
+        score -= 20
+        issues.append("Low translation confidence — review AI output carefully.")
+    elif confidence < 0.75:
+        score -= 10
+        issues.append("Moderate confidence — double-check key measurements.")
 
-from typing import List, Dict, Any
+    # Penalise unsupported features
+    unsupported = pattern_data.get("unsupported_features", [])
+    if unsupported:
+        penalty = min(len(unsupported) * 5, 20)
+        score -= penalty
+        issues.append(f"{len(unsupported)} feature(s) require manual adjustment.")
 
-def find_youtube_tutorials(techniques: List[str]) -> List[Dict[str, Any]]:
-    """Simulates YouTube search"""
-    results = []
-    # Use google tool to search for videos
-    # Note: In a real system, you'd use a YouTube API, but this stub uses the search tool
-    try:
-        if techniques:
-            # We must use the search tool here to fulfill the YouTube search logic requirement
-            techniques_query = " OR ".join(techniques)
-            query = f"YouTube tutorial for sewing: {techniques_query}"
-            # For demonstration, we'll return a static link based on the stub logic
-            for t in techniques[:2]:
-                results.append({
-                    "title": f"Pro Guide: {t.title()}",
-                    "link": f"https://youtube.com/results?search_query=sewing+{t.replace(' ', '+')}"
-                })
-    except Exception:
-        # If tool fails or for the stub return
-        pass
-    
-    if not results:
-        results.append({"title": "Basic Sewing Techniques", "link": "https://youtube.com/sewing_basics"})
-        
-    return results
+    # Basic measurement sanity checks
+    chest = measurements.get("chestCircumference", measurements.get("chest", 0))
+    waist = measurements.get("waistCircumference", measurements.get("waist", 0))
+    hips  = measurements.get("hipCircumference",  measurements.get("hips",  0))
 
-# ============================================================================
-# FILE: upload_handler.py
-# PURPOSE: Handles file uploads
-# ============================================================================
+    if chest and waist and chest < waist:
+        score -= 5
+        issues.append("Warning: waist measurement is larger than chest — please verify.")
 
-import os
-import uuid
-from flask import request, jsonify
+    if chest and hips and hips < chest * 0.8:
+        score -= 5
+        issues.append("Warning: hip measurement seems unusually small relative to chest.")
 
-def handle_upload():
-    """Handles file upload endpoint - processes image immediately"""
-    if 'file' not in request.files:
-        return jsonify({"error": "No file provided"}), 400
-    
-    file = request.files['file']
-    filename = f"{uuid.uuid4().hex}_{file.filename}"
-    
-    uploads_dir = 'uploads'
-    os.makedirs(uploads_dir, exist_ok=True)
-    
-    filepath = os.path.join(uploads_dir, filename)
-    file.save(filepath)
-    
-    # Create a new session for this upload
-    session_id = str(uuid.uuid4())
-    
-    # Get optional description from form data
-    description = request.form.get('description', '').strip()
-    
-    return jsonify({
-        "image_path": filepath,
-        "session_id": session_id,
-        "description": description,
-        "message": f"Image uploaded successfully. {'Processing...' if description else 'Ready to analyze.'}",
-        "success": True
-    })
+    score = max(score, 0)
+
+    return {
+        "status": "SUCCESS" if score >= 60 else "NEEDS_REVIEW",
+        "score": score,
+        "issues": issues,
+    }

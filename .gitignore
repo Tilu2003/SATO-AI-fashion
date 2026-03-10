@@ -1,0 +1,57 @@
+
+# --- Secrets & Environment ---
+.env
+.env.*
+*.env
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+venv/
+.venv/
+env/
+
+# --- Node ---
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# --- User Data (NEVER commit) ---
+uploads/
+sessions.json
+
+# --- Generated Output Files ---
+static/downloads/
+*.svg
+!freesewing_bodice.svg
+debug-*.svg
+test_*.svg
+test-*.svg
+full_pattern.svg
+professional_pattern.svg
+pattern_*.svg
+
+# --- Temp / Debug Files ---
+temp_*.json
+test_input.json
+test_freesewing_input.json
+*.tmp
+
+# --- Test Debug Scripts ---
+debug-*.mjs
+test-*.mjs
+test-*.cjs
+fix-html.ps1
+start.ps1
+verify_freesewing_formulas.py
+
+# --- OS ---
+.DS_Store
+Thumbs.db
