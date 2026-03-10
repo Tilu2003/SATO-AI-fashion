@@ -1,17 +1,12 @@
-User uploads garment photo
-        ↓
-[Stage 1] Gemini Vision Analysis  →  garment type, features, style
-        ↓
-[Stage 1] OpenCV Proportion Extraction  →  chest/waist/hip ratios
-        ↓
-[Stage 2] Measurement Form  →  user submits their body measurements
-        ↓
+User uploads garment photo ---> [Stage 1] Gemini Vision Analysis  →  garment type, features, style ---> [Stage 1] OpenCV Proportion Extraction  →  chest/waist/hip ratios
+---> [Stage 2] Measurement Form  →  user submits their body measurements
+---> 
 [Stage 3] Fit Questions  →  conversational preference collection
-        ↓
+---> 
 [Stage 4] Pattern Generation  →  SVG sewing pattern (Aldrich formulas)
-        ↓
+---> 
 [Stage 5] Download  →  user gets their custom pattern SVG
-```
+
 
 ### Key Modules
 
